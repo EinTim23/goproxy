@@ -1,0 +1,7 @@
+github.com/EinTim23/goproxy/ext v0.0.0-20241027095123-631740e7969c h1:bjmw7IjmV5909QY7LnHB2QynOrM7JSw48Bys/rlM0gY=
+github.com/EinTim23/goproxy/ext v0.0.0-20241027095123-631740e7969c/go.mod h1:da0U4omdTJYLcXzse/fEXiTobghoCFPg8TAIee4O8Tc=
+github.com/rogpeppe/go-charset v0.0.0-20180617210344-2471d30d28b4/go.mod h1:qgYeAmZ5ZIpBWTGllZSQnw97Dj+woV0toclVaRGI8pc=
+golang.org/x/net v0.26.0 h1:soB7SVo0PWrY4vPW/+ay0jKDNScG2X9wFeYlXIvJsOQ=
+golang.org/x/net v0.26.0/go.mod h1:5YKkiSynbBIh3p6iOc/vibscux0x38BZDkn8sCUPxHE=
+golang.org/x/text v0.16.0 h1:a94ExnEXNtEwYLGJSIUxnWoxoRz/ZcCsV63ROupILh4=
+golang.org/x/text v0.16.0/go.mod h1:GhwF1Be+LQoKShO3cGOHzqOgRrGaYc9AvblQOmPVHnI=
