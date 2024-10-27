@@ -2,6 +2,7 @@ package goproxy
 
 import (
 	"bufio"
+	"crypto/tls"
 	"io"
 	"log"
 	"net"
@@ -19,13 +20,14 @@ type ProxyHttpServer struct {
 	// KeepDestinationHeaders indicates the proxy should retain any headers present in the http.Response before proxying
 	KeepDestinationHeaders bool
 	// setting Verbose to true will log information on each request sent to the proxy
-	Verbose         bool
-	Logger          Logger
-	NonproxyHandler http.Handler
-	reqHandlers     []ReqHandler
-	respHandlers    []RespHandler
-	httpsHandlers   []HttpsHandler
-	Tr              *http.Transport
+	Verbose          bool
+	Logger           Logger
+	NonproxyHandler  http.Handler
+	reqHandlers      []ReqHandler
+	respHandlers     []RespHandler
+	httpsHandlers    []HttpsHandler
+	websocketHandler func(proxy *ProxyHttpServer, ctx *ProxyCtx, w http.ResponseWriter, req *http.Request, tlsConfig *tls.Config, clientConn *tls.Conn)
+	Tr               *http.Transport
 	// ConnectDial will be used to create TCP connections for CONNECT requests
 	// if nil Tr.Dial will be used
 	ConnectDial        func(network string, addr string) (net.Conn, error)
