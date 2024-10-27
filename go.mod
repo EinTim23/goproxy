@@ -3,7 +3,7 @@ module github.com/EinTim23/goproxy
 go 1.18
 
 require (
-	github.com/EinTim23/goproxy/ext v0.0.0-20190711103511-473e67f1d7d2
+	github.com/EinTim23/goproxy/ext v0.0.0-20241027095123-631740e7969c
 	golang.org/x/net v0.26.0
 )
 
