@@ -15,8 +15,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/elazarl/goproxy"
-	"github.com/elazarl/goproxy/transport"
+	"github.com/EinTim23/goproxy"
+	"github.com/EinTim23/goproxy/transport"
 )
 
 type FileStream struct {
