@@ -272,8 +272,8 @@ func (proxy *ProxyHttpServer) handleHttps(w http.ResponseWriter, r *http.Request
 							ctx.Logf("Enforced HTTP websocket forwarding over TLS")
 							proxy.serveWebsocketHttpOverTLS(ctx, w, req, rawClientTls)
 						} else {
-							if proxy.websocketHandler != nil {
-								proxy.websocketHandler(proxy, ctx, w, req, tlsConfig, rawClientTls)
+							if proxy.WebsocketHandler != nil {
+								proxy.WebsocketHandler(proxy, ctx, w, req, tlsConfig, rawClientTls)
 							} else {
 								proxy.serveWebsocketTLS(ctx, w, req, tlsConfig, rawClientTls)
 							}
